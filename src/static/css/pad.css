@@ -44,6 +44,12 @@ a img {
   border: 0
 }
 /* menu */
+
+#header .bar {
+	height: 20px;
+	width: 100%;
+	background-color: #7DB414;
+}
 .toolbar {
   background: #f7f7f7;
   background: -webkit-linear-gradient(#f7f7f7, #f1f1f1 80%);
@@ -54,6 +60,8 @@ a img {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   padding-top: 4px;
+position: absolute;
+top: 20px;
   width: 100%;
   white-space: nowrap;
   height: 32px;
@@ -172,7 +180,7 @@ a img {
 }
 #editorcontainer {
   position: absolute;
-  top: 37px; /* + 1px border */
+  top: 57px; /* + 1px border */
   left: 0px;
   right: 0px;
   bottom: 0px;
