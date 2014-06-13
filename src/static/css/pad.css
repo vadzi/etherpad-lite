@@ -45,10 +45,24 @@ a img {
 }
 /* menu */
 
-#header .bar {
+#greenbar.default {
 	height: 20px;
 	width: 100%;
 	background-color: #7DB414;
+}
+#greenbar.nobar {
+	height: 0px;
+}
+#logobar.default {
+	position: relative;
+	height: 145px;
+	width: 100%;
+}
+.logo {
+	position: absolute;
+	bottom: 30px;
+	right: 100px;
+//	width: 166px;
 }
 .toolbar {
   background: #f7f7f7;
@@ -60,8 +74,8 @@ a img {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   padding-top: 4px;
-position: absolute;
-top: 20px;
+// position: absolute;
+// top: 20px;
   width: 100%;
   white-space: nowrap;
   height: 32px;
@@ -179,11 +193,12 @@ top: 20px;
   top: 2px;
 }
 #editorcontainer {
-  position: absolute;
-  top: 57px; /* + 1px border */
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  position: relative;
+height: 100%;
+//  top: 57px; /* + 1px border */
+//  left: 0px;
+//  right: 0px;
+//  bottom: 0px;
   z-index: 1;
 }
 #editorcontainer iframe {

@@ -49,9 +49,19 @@
         <script type="text/javascript" src="../static/js/html10n.js"></script>
         <script type="text/javascript" src="../static/js/l10n.js"></script>
 
-        <!-- head and body had been removed intentionally -->
+        
+	<!-- head and body had been removed intentionally -->
 
         <% e.begin_block("body"); %>
+	
+        
+	<div id="editorcontainerbox">
+	<div id="greenbar" class="default"></div>
+	<div id="logobar" class="default">
+		<div class="logo">
+			<img src="../static/img/logo_e-science_network.png" alt="e-science-logo" />
+		</div>
+	</div>
 	<div id="editbar" class="toolbar">
             <div id="overlay">
                 <div id="overlay-inner"></div>
@@ -95,15 +105,10 @@
             <% e.end_block(); %>
         </div>
 
-        <div id="editorcontainerbox">
-	<header id="header">
-			<div class="bar"></div>
-			<div id="header_bg_bar"></div>
-			<div class="inside container_16"></div>
-			<div id="main_navigation"></div>
-			<div id="navigation"></div>
-			<div class="container_16"></div>	
-	</header>
+
+
+			
+	
             <div id="editorcontainer"></div>
             <div id="editorloadingbox">
               <div id="passwordRequired">
