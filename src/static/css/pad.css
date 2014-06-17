@@ -55,30 +55,43 @@ a img {
 }
 #logobar.default {
 	position: relative;
-	height: 145px;
+	height: 120px;
 	width: 100%;
 }
 .logo {
 	position: absolute;
-	bottom: 30px;
-	right: 100px;
+	bottom: 20px;
+	right: 30%;
 //	width: 166px;
 }
+#logobar.nologobar {
+	height: 0px;
+}
+#mainmenu.default {
+	position: relative;
+	width: 70%;
+	height: 25px;
+	left: 30%;
+	background-color: #7DB414;
+}
+#mainmenu.nomainmenu {
+	height: 0px;
+}
 .toolbar {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -moz-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -o-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -ms-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: linear-gradient(#f7f7f7, #f1f1f1 80%);
-  border-bottom: 1px solid #ccc;
+  background: #E9E9E9;
+  background: -webkit-linear-gradient(#E9E9E9, #E9E9E9 80%);
+  background: -moz-linear-gradient(#E9E9E9, #E9E9E9 80%);
+  background: -o-linear-gradient(#E9E9E9, #E9E9E9 80%);
+  background: -ms-linear-gradient(#E9E9E9, #E9E9E9 80%);
+  background: linear-gradient(#E9E9E9, #E9E9E9 80%);
+//  border-bottom: 1px solid #ccc;
   overflow: hidden;
-  padding-top: 4px;
+// padding-top: 4px;
 // position: absolute;
 // top: 20px;
   width: 100%;
   white-space: nowrap;
-  height: 32px;
+  height: 25px;
 }
 .toolbar ul {
   position: relative;
@@ -139,7 +152,7 @@ a img {
   display: inline-block;
   min-height: 18px;
   overflow: hidden;
-  padding: 4px 5px;
+  padding: 2px 5px;
   text-align: center;
   text-decoration: none;
   min-width: 18px;
@@ -175,7 +188,7 @@ a img {
 }
 .toolbar ul li select {
   background: #fff;
-  padding: 4px;
+//  padding: 4px;
   line-height: 22px; /* fix for safari (win/mac) */
   height: 28px; /* fix for chrome (mac) */
   border-radius: 3px;
@@ -909,7 +922,7 @@ input[type=checkbox] {
     top: 68px;
   }
   #editbar { 
-    height: 62px;
+    height: 25px;
   }
   .toolbar ul.menu_right { 
     float: left;
@@ -943,7 +956,7 @@ input[type=checkbox] {
       background: linear-gradient(#f7f7f7, #f1f1f1 80%);
       width: 100%;
       overflow: hidden;
-      height: 32px;
+      height: 25px;
       position: fixed;
       bottom: 0;
       border-top: 1px solid #ccc;
