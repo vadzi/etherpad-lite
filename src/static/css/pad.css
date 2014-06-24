@@ -62,18 +62,130 @@ a img {
 	position: absolute;
 	bottom: 20px;
 	right: 30%;
-//	width: 166px;
+   //	width: 166px;
 }
 #logobar.nologobar {
 	height: 0px;
 }
 #mainmenu.default {
 	position: relative;
-	width: 70%;
+	width: auto;
 	height: 25px;
-	left: 30%;
+	margin-left: 30%;
 	background-color: #7DB414;
+   background: #7DB414;
+   background: -webkit-linear-gradient(#7DB414, #7DB414 80%);
+   background: -moz-linear-gradient(#7DB414, #7DB414 80%);
+   background: -o-linear-gradient(#7DB414, #7DB414 80%);
+   background: -ms-linear-gradient(#7DB414, #7DB414 80%);
+   background: linear-gradient(#7DB414, #7DB414 80%);
+   // border-bottom: 1px solid #ccc;
+   overflow: hidden;
+   // padding-top: 4px;
+   // position: absolute;
+   // top: 20px;
+   // width: 100%;
+   white-space: nowrap;
+   height: 25px;
 }
+#mainmenu.default ul {
+  position: relative;
+  list-style: none;
+  padding-right: 3px;
+  padding-left: 1px;
+  z-index: 2;
+  overflow: hidden;
+  float: left;
+}
+#mainmenu.default ul li {
+  float: left;
+  margin-left: 2px;
+}
+#mainmenu.default ul li.separator {
+  border: inherit;
+  background: inherit;
+  visibility: hidden;
+  width: 0px;
+  padding: 5px;
+}
+#mainmenu.default ul li a:hover {
+  text-decoration: none;
+  background: #fff;
+  background: -webkit-linear-gradient(#f4f4f4, #e4e4e4);
+  background: -moz-linear-gradient(#f4f4f4, #e4e4e4);
+  background: -o-linear-gradient(#f4f4f4, #e4e4e4);
+  background: -ms-linear-gradient(#f4f4f4, #e4e4e4);
+  background: linear-gradient(#f4f4f4, #e4e4e4);
+}
+#mainmenu.default ul li a:active {
+  background: #eee;
+  background: -webkit-linear-gradient(#ddd, #fff);
+  background: -moz-linear-gradient(#ddd, #fff);
+  background: -o-linear-gradient(#ddd, #fff);
+  background: -ms-linear-gradient(#ddd, #fff);
+  background: linear-gradient(#ddd, #fff);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
+  box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
+}
+#mainmenu.default ul li a {
+  background: #fff;
+  background: -webkit-linear-gradient(#fff, #f0f0f0);
+  background: -moz-linear-gradient(#fff, #f0f0f0);
+  background: -o-linear-gradient(#fff, #f0f0f0);
+  background: -ms-linear-gradient(#fff, #f0f0f0);
+  background: linear-gradient(#fff, #f0f0f0);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #ccc;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 18px;
+  overflow: hidden;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 18px;
+}
+#mainmenu.default ul li a .buttonicon {
+  position: relative;
+  top: 1px;
+}
+#mainmenu.default ul li a .buttontext {
+  color: #222;
+  font-size: 14px;
+}
+#mainmenu.default ul li a.grouped-left {
+  border-radius: 3px 0 0 3px;
+}
+#mainmenu.default ul li a.grouped-middle {
+  border-radius: 0;
+  margin-left: -2px;
+  border-left: 0;
+}
+#mainmenu.default ul li a.grouped-right {
+  border-radius: 0 3px 3px 0;
+  margin-left: -2px;
+  border-left: 0;
+}
+#mainmenu.default ul li a.selected {
+  background: #eee !important;
+  background: -webkit-linear-gradient(#EEE, #F0F0F0) !important;
+  background: -moz-linear-gradient(#EEE, #F0F0F0) !important;
+  background: -o-linear-gradient(#EEE, #F0F0F0) !important;
+  background: -ms-linear-gradient(#EEE, #F0F0F0) !important;
+  background: linear-gradient(#EEE, #F0F0F0) !important;
+}
+#mainmenu.default ul li select {
+  background: #fff;
+  //  padding: 4px;
+  line-height: 22px; /* fix for safari (win/mac) */
+  height: 28px; /* fix for chrome (mac) */
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
 #mainmenu.nomainmenu {
 	height: 0px;
 }
@@ -84,11 +196,11 @@ a img {
   background: -o-linear-gradient(#E9E9E9, #E9E9E9 80%);
   background: -ms-linear-gradient(#E9E9E9, #E9E9E9 80%);
   background: linear-gradient(#E9E9E9, #E9E9E9 80%);
-//  border-bottom: 1px solid #ccc;
+  //  border-bottom: 1px solid #ccc;
   overflow: hidden;
-// padding-top: 4px;
-// position: absolute;
-// top: 20px;
+  // padding-top: 4px;
+  // position: absolute;
+  // top: 20px;
   width: 100%;
   white-space: nowrap;
   height: 25px;
@@ -101,9 +213,6 @@ a img {
   z-index: 2;
   overflow: hidden;
   float: left
-}
-.toolbar ul.menu_right {
-  float: right
 }
 .toolbar ul li {
   float: left;
@@ -188,7 +297,7 @@ a img {
 }
 .toolbar ul li select {
   background: #fff;
-//  padding: 4px;
+  //  padding: 4px;
   line-height: 22px; /* fix for safari (win/mac) */
   height: 28px; /* fix for chrome (mac) */
   border-radius: 3px;

@@ -54,7 +54,7 @@
  ////////////////////////////////////////////////////////////////////////////////////////       
 	<!-- head and body had been removed intentionally -->
 
-        <% e.begin_block("body"); %>
+   <% e.begin_block("body"); %>
 	
         
 	<div id="editorcontainerbox">
@@ -66,10 +66,10 @@
 	</div>
 	<div id="mainmenu" class="default">
 	<ul>
-		<li>
-			<a href="" class="impexp">emport/export</a>
-		</li>
-	</ul>
+		 <% e.begin_block("editbarMenuRight"); %>
+                <%- toolbar.menu(settings.toolbar.right) %>
+                <% e.end_block(); %>
+   </ul>
 	</div>
 	<div id="editbar" class="toolbar">
             <div id="overlay">
@@ -81,11 +81,7 @@
                 <%- toolbar.menu(settings.toolbar.left) %>
                 <% e.end_block(); %>
             </ul>
-            <ul class="menu_right">
-                <% e.begin_block("editbarMenuRight"); %>
-                <%- toolbar.menu(settings.toolbar.right) %>
-                <% e.end_block(); %>
-            </ul>
+            
         </div>
         <% e.begin_block("afterEditbar"); %><% e.end_block(); %>
 
