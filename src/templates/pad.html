@@ -42,6 +42,9 @@
         <% e.begin_block("styles"); %>
         <link href="../static/css/pad.css" rel="stylesheet">
         <link href="../static/custom/pad.css" rel="stylesheet">
+
+	<link href="../static/css/font-awesome.css" rel="stylesheet">
+
         <style title="dynamicsyntax"></style>
         <% e.end_block(); %>
 
@@ -63,7 +66,8 @@
 		<div class="logo">
 			<img src="../static/img/logo_e-science_network.png" alt="e-science-logo" />
 		</div>
-	</div>
+	
+</div>
 	<div id="mainmenu" class="default">
 	<ul>
 		 <% e.begin_block("editbarMenuRight"); %>
@@ -115,7 +119,12 @@
 			
 	
             <div id="editorcontainer"></div>
-            <div id="editorloadingbox">
+           
+
+
+
+
+	      <div id="editorloadingbox">
               <div id="passwordRequired">
                 <p data-l10n-id="pad.passwordRequired">You need a password to access this pad</p>
                 <form class='passForm' method='POST'>
@@ -195,6 +204,9 @@
         <div id="importexport" class="popup">
             <h1 data-l10n-id="pad.importExport.import_export"></h1>
             <div class="column acl-write">
+<i class="fa fa-arrows-h">
+::before
+</i> 
                 <% e.begin_block("importColumn"); %>
                 <h2 data-l10n-id="pad.importExport.import"></h2>
                 <div class="importmessage" id="importmessageabiword" data-l10n-id="pad.importExport.abiword.innerHTML"></div><br>

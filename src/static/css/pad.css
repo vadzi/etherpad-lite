@@ -329,6 +329,9 @@ height: 100%;
   padding: 0;
   margin: 0;
   left: 0; /* Required for safari fixes RTL */
+  scrolling: no;
+  scroll: no;
+  overflow: auto;
 }
 #editorloadingbox {
   padding-top: 100px;
